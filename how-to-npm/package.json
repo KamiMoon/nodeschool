@@ -1,0 +1,21 @@
+{
+    "name": "@kamimoon/how-to-npm",
+    "version": "1.0.1",
+    "description": "example from nodeschool how-to-npm",
+    "main": "index.js",
+    "scripts": {
+        "test": "node test.js"
+    },
+    "author": "erickizaki",
+    "license": "ISC",
+    "dependencies": {},
+    "devDependencies": {},
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/KamiMoon/hello-world.git"
+    },
+    "bugs": {
+        "url": "https://github.com/KamiMoon/hello-world/issues"
+    },
+    "homepage": "https://github.com/KamiMoon/hello-world#readme"
+}
