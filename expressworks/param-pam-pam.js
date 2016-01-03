@@ -8,7 +8,6 @@ app.use(bodyparser.urlencoded({
     extended: false
 }));
 
-
 var port = process.argv[2];
 
 app.put('/message/:id', function(req, res) {
@@ -21,6 +20,5 @@ app.put('/message/:id', function(req, res) {
 
     res.send(hash);
 });
-
 
 app.listen(port);

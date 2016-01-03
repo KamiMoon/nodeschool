@@ -8,7 +8,6 @@ app.use(bodyparser.urlencoded({
     extended: false
 }));
 
-
 var port = process.argv[2];
 var filePath = process.argv[3];
 
@@ -33,6 +32,5 @@ app.get('/books', function(req, res) {
 
 
 });
-
 
 app.listen(port);

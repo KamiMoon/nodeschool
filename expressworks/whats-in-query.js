@@ -7,7 +7,6 @@ app.use(bodyparser.urlencoded({
     extended: false
 }));
 
-
 var port = process.argv[2];
 
 app.get('/search', function(req, res) {
@@ -16,6 +15,5 @@ app.get('/search', function(req, res) {
 
     res.send(query);
 });
-
 
 app.listen(port);
