@@ -1,25 +1,22 @@
 function countWords(inputWords) {
-    var result = {};
 
-	for (var i = 0; i < inputWords.length; i++) {
-		var val = inputWords[i];
-
-		if(!result[val]){
-			result[val] = 0;
+	return inputWords.reduce(function(countMap, currentValue){
+		if(!countMap[currentValue]){
+			countMap[currentValue] = 0;
 		}
 
-		result[val]++;
-	};
+		countMap[currentValue]++;
+
+		return countMap;
+	}, {});
  	
-	return result;
 }
 
  module.exports = countWords;
 
 
  /*
-
-
+Official:
 
   function countWords(arr) {
    return arr.reduce(function(countMap, word) {
@@ -29,6 +26,5 @@ function countWords(inputWords) {
  }
 
  module.exports = countWords
-
 
  */
