@@ -51,7 +51,6 @@ var json = {
 
 // Your code here.
 var [familyName, birthDay] = [json.name.family, json.birth.day];
-
 //    var {name: {family: familyName}, birth: {day: birthDay}} = json;
 
 
