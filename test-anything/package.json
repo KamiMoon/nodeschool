@@ -1,0 +1,14 @@
+{
+  "name": "test-anything",
+  "version": "1.0.0",
+  "description": "",
+  "main": "1_log_it_out.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "tape": "^4.5.1"
+  }
+}

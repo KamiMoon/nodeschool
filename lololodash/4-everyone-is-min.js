@@ -67,6 +67,7 @@ var worker = function(collection) {
         hot: [],
         warm: []
     };
+    
 
     for (var cityName in collection) {
         var tempArray = collection[cityName];

@@ -1,0 +1,37 @@
+https://github.com/caolan/async
+
+--can work in the browser as well as server
+
+Collections
+
+each(arr, iteratee(item, callback), [callback(err)])
+	-parallel, no order
+	-ends immediatley on error
+	-call back does NOT have results only has error
+
+forEachOf(obj, iteratee(item, key, callback), [callback(err)])
+	-Like each, except that it iterates over objects, and passes the key as the second argument to the iteratee.
+	-he key is the item's key, or index in the case of an array. 
+
+map(arr, iteratee(item, callback), [callback(err, results)])
+	-parallel
+	-results array same order as original arr
+
+filter(arr, iteratee(item, callback), [callback(err, results)])
+	-alias is select
+	-iteratee(item, callback) - A truth test to apply to each item in arr. The iteratee is passed a callback(err, truthValue), which must be called with a boolean argument once it has completed.
+
+reject(arr, iteratee, [callback])
+	-The opposite of filter. Removes values that pass an async truth test.
+
+
+Control Flow
+
+series
+	-Run the functions in the tasks array in series, each one running once the previous function has completed. 
+
+parallel
+	-Run the tasks array of functions in parallel, without waiting until the previous function has completed. 
+	-Note: parallel is about kicking-off I/O tasks in parallel, not about parallel execution of code. If your tasks do not use any timers or perform any I/O, they will actually be executed in series. Any synchronous setup sections for each task will happen one after the other. JavaScript remains single-threaded.
+
+

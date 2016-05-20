@@ -1,10 +1,11 @@
 var fs = require('fs');
 var path = require('path');
 
-module.exports.getFileListFiltered = function(directoryName, fileExtension, callback) {
+module.exports.getFileListFiltered = function (directoryName, fileExtension, callback) {
     var filtered = [];
 
-    fs.readdir(directoryName, function(err, files) {
+
+    fs.readdir(directoryName, function (err, files) {
         if (err) {
             return callback(err);
         }
@@ -18,3 +19,4 @@ module.exports.getFileListFiltered = function(directoryName, fileExtension, call
         return callback(null, filtered);
     });
 };
+
